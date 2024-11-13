@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane maxHeight="645.0" maxWidth="1080.0" minHeight="645.0" minWidth="1080.0" prefHeight="645.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tn.musego.controllers.BackUserListController">
+    <children>
+        <Text layoutX="387.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion des utilisateurs" />
+        <TableView fx:id="tableview" layoutX="70.0" layoutY="133.0" prefHeight="454.0" prefWidth="951.0">
+            <columns>
+                <TableColumn fx:id="col_creation_date" prefWidth="119.0" text="Date creation" />
+                <TableColumn fx:id="col_username" prefWidth="215.0" text="Nom utilisateur" />
+                <TableColumn fx:id="col_email" minWidth="0.0" prefWidth="182.0" text="Email" />
+                <TableColumn fx:id="col_enabled" prefWidth="99.0" text="Actif" />
+                <TableColumn fx:id="col_role" prefWidth="100.0" text="Role" />
+            </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+        </TableView>
+        <TextField id="input" fx:id="search_input" layoutX="597.0" layoutY="73.0" promptText="Email ou nom" styleClass="input" stylesheets="@../../../styles/styles.css" />
+        <JFXButton fx:id="lock_btn" buttonType="RAISED" disable="true" layoutX="947.0" layoutY="75.0" onAction="#lockUserBtn" style="-fx-background-color: ff0000;" text="Bloquer">
+            <graphic>
+                <FontIcon iconLiteral="fth-user-x" />
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="recherche_btn" buttonType="RAISED" layoutX="758.0" layoutY="74.0" onAction="#findUser" style="-fx-background-color: #c4c2c2;" text="Rechercher">
+            <graphic>
+                <FontIcon iconLiteral="fth-search" />
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="edit_btn" disable="true" layoutX="857.0" layoutY="75.0" onAction="#editUserBtn" style="-fx-background-color: FFCC00;" text="Modifier">
+            <graphic>
+                <FontIcon iconLiteral="fth-user-check" />
+            </graphic>
+        </JFXButton>
+    </children>
+</AnchorPane>

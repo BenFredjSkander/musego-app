@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0"
+            prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.tn.musego.controllers.BackMainViewController">
+   <top>
+      <AnchorPane prefHeight="90.0" prefWidth="1280.0" styleClass="backofficeMain"
+                  stylesheets="@../../../styles/styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutX="14.0" layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity">
+               <children>
+                  <ImageView fitHeight="82.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/hannibal_icon.png"/>
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="22.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/musego_wh.png"/>
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <MenuButton fx:id="profilemenu" layoutX="1171.0" layoutY="20.0" mnemonicParsing="false"
+                        onAction="#openProfileMenu" style="-fx-background-color: transparent;" textFill="WHITE"
+                        AnchorPane.rightAnchor="30.0">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Front office"/>
+                  <MenuItem mnemonicParsing="false" text="Se déconnecter"/>
+               </items>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/profil_icon.png"/>
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0"/>
+               </font>
+            </MenuButton>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <VBox alignment="CENTER_LEFT" layoutX="18.0" layoutY="14.0" maxWidth="1.7976931348623157E308" prefHeight="630.0"
+            prefWidth="190.0" spacing="25.0" styleClass="backofficeMain" stylesheets="@../../../styles/styles.css">
+         <children>
+            <JFXButton onAction="#goToHome" text="Accueil" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/home_icon.png"/>
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="13.0"/>
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER" onAction="#goToUsers" text="Utilisateurs" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="110.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/users.png"/>
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="13.0"/>
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#goToArts" text="Oeuvres" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/oeuvre_icon.png"/>
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="13.0"/>
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#goToEvents" text="Evenements" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0"/>
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/eventicon.png"/>
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton onAction="#goToWorkshops" text="Ateliers" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/atelier_icon.png"/>
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="13.0"/>
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#goToSubscriptions" text="Abonnements" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/abonnement_icon.png"/>
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="13.0"/>
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#goToFeedback" text="Avis" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0"/>
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/avis_icon.png"/>
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets left="25.0" top="20.0"/>
+         </padding>
+         <opaqueInsets>
+            <Insets/>
+         </opaqueInsets>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane fx:id="content" prefHeight="630.0" prefWidth="1090.0"/>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

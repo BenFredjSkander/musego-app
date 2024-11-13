@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="645.0" maxWidth="1080.0" minHeight="645.0" minWidth="1080.0" prefHeight="645.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tn.musego.controllers.BackSponsorsController">
+    <children>
+        <GridPane fx:id="root" alignment="CENTER" hgap="10" layoutX="689.0" layoutY="154.0" prefHeight="236.0" prefWidth="372.0" vgap="10">
+            <columnConstraints>
+                <ColumnConstraints halignment="LEFT" hgrow="NEVER" minWidth="10" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10" />
+            </columnConstraints>
+            <rowConstraints>
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Nom :" GridPane.columnIndex="0" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font></Label>
+                <TextField fx:id="nom_sponsor" stylesheets="@../../../styles/Event.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="capacitefinan" prefHeight="18.0" prefWidth="193.0" stylesheets="@../../../styles/Event.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label text="Photo" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font></Label>
+                <Label text="l'evenement sposnorisé" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font></Label>
+                <Button fx:id="annulerButton" layoutX="150.0" prefHeight="18.0" prefWidth="118.0" styleClass="button2" stylesheets="@../../../styles/Event.css" text="annuler" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <effect>
+                        <Blend mode="RED" />
+                    </effect></Button>
+                <Button fx:id="input_poster" mnemonicParsing="false" onAction="#add_poster" prefHeight="27.0" prefWidth="112.0" stylesheets="@../../../styles/Event.css" text="ajouter fichier" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label text="capacite financiere" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font></Label>
+                <Button fx:id="button_confirm_modif" mnemonicParsing="false" onAction="#modifierSponsor" prefHeight="25.0" prefWidth="131.0" stylesheets="@../../../styles/Event.css" text="modifier" GridPane.rowIndex="5" />
+            <ComboBox fx:id="eventselected" prefHeight="35.0" prefWidth="213.0" styleClass="button" stylesheets="@../../../styles/Event.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+              <Label text="id">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+            </Label>
+              <TextField fx:id="id_sponsor" disable="true" editable="false" stylesheets="@../../../styles/Event.css" GridPane.columnIndex="1" />
+            </children>
+        </GridPane>
+        <Text layoutX="700.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MODIFIER SPONSOR">
+            <font>
+                <Font name="Berlin Sans FB" size="25.0" />
+            </font>
+        </Text>
+        <TextField fx:id="searchbar" layoutX="331.0" layoutY="61.0" promptText="searchbar" stylesheets="@../../../styles/Event.css" />
+        <TableView fx:id="sponsorTable" layoutX="38.0" layoutY="106.0" prefHeight="220.0" prefWidth="536.0">
+            <columns>
+                <TableColumn fx:id="id" minWidth="0.0" prefWidth="0.0" text="id" />
+                <TableColumn fx:id="nom" prefWidth="104.0" text="nom" />
+                <TableColumn fx:id="tab_capacite_finan" prefWidth="171.0" text="capacite fianciere" />
+                <TableColumn fx:id="event_sponsorise" prefWidth="149.0" text="evenement sponsorise" />
+            <TableColumn fx:id="photo" prefWidth="110.0" text="photo" />
+            </columns>
+        </TableView>
+        <VBox blendMode="OVERLAY" layoutX="623.0" layoutY="88.0" prefHeight="200.0" prefWidth="11.0" style="-fx-background-color: #0000B2;" />
+        <Button fx:id="button_select_modifier" layoutX="306.0" layoutY="351.0" mnemonicParsing="false" onAction="#select_Sponsor" prefHeight="25.0" prefWidth="210.0" stylesheets="@../../../styles/Event.css" text="selectionner pour modifier">
+            <effect>
+                <Blend mode="BLUE" />
+            </effect></Button>
+        <Button fx:id="button_supprimer" layoutX="68.0" layoutY="351.0" mnemonicParsing="false" onAction="#supprimer_sponsor" prefHeight="25.0" prefWidth="210.0" styleClass="button2" stylesheets="@../../../styles/Event.css" text="supprimer">
+            <effect>
+                <Blend mode="RED" />
+            </effect></Button>
+        <Text layoutX="38.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des sponsors">
+            <font>
+                <Font name="Berlin Sans FB" size="31.0" />
+            </font>
+        </Text>
+        <Button fx:id="ajoutersponsor" layoutX="81.0" layoutY="430.0" onAction="#ajouterSponsor" prefHeight="34.0" prefWidth="490.0" stylesheets="@../../../styles/Event.css" text="Ajouter sponsor">
+            <effect>
+                <Blend mode="BLUE" />
+            </effect>
+        </Button>
+        <Button layoutX="499.0" layoutY="62.0" mnemonicParsing="false" styleClass="button3" stylesheets="@../../../styles/Event.css" text="chercher" />
+    </children>
+</AnchorPane>

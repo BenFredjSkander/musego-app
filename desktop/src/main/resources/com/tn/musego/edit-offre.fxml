@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="478.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tn.musego.controllers.EditOffreController">
+   <children>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #275497;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier une offre">
+               <font>
+                  <Font name="Berlin Sans FB" size="34.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" top="15.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <Label fx:id="lblerr" alignment="CENTER" />
+      <GridPane alignment="CENTER" hgap="10.0" prefHeight="302.0" prefWidth="458.0" vgap="10.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Type">
+               <font>
+                  <Font name="Baskerville Old Face" size="25.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="combotype" prefHeight="26.0" prefWidth="249.0" GridPane.columnIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Image" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Baskerville Old Face" size="25.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnfile" mnemonicParsing="false" onAction="#fileBut" prefHeight="31.0" prefWidth="250.0" style="-fx-background-color: #5A71AC;" text="Choisir un fichier" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prix" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Baskerville Old Face" size="25.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfprix" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Promotion" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Baskerville Old Face" size="25.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfpromotion" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date de début" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Baskerville Old Face" size="25.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="dtdebut" prefHeight="26.0" prefWidth="228.0" style="-fx-background-color: #5A71AC;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date de fin" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Baskerville Old Face" size="25.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="dtfin" prefHeight="26.0" prefWidth="251.0" style="-fx-background-color: #5A71AC;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextArea fx:id="tadesc" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Baskerville Old Face" size="25.0" />
+               </font>
+            </Text>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </GridPane>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="65.0" prefWidth="478.0" spacing="15.0">
+         <children>
+            <Button fx:id="btnedit" mnemonicParsing="false" onAction="#editBut" style="-fx-background-color: #5A71AC;" text="Modifier" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btncls" mnemonicParsing="false" onAction="#annulerBut" style="-fx-background-color: #5A71AC;" text="Annuler" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

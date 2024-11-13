@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="645.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tn.musego.controllers.FrontHomeController">
+   <children>
+      <ImageView fitHeight="785.0" fitWidth="604.0" layoutX="-27.0" layoutY="-125.0" opacity="0.32" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/VenusdeMilo.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="153.0" layoutY="334.0" prefHeight="228.0" prefWidth="799.0" styleClass="panel" stylesheets="@../../../styles/styles.css">
+         <children>
+            <ImageView fitHeight="561.0" fitWidth="426.0" layoutX="569.0" layoutY="-110.0" opacity="0.18" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/hannibal_icon.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="25.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entrez dans un monde fascinant de découvertes et d'explorations au Musée de l'Histoire Naturelle, où l'histoire de notre planète est préservée et exposée de manière captivante. Depuis des milliers d'années, notre planète a été le théâtre d'événements épiques, d'espèces étranges et de merveilles naturelles.Que vous soyez un passionné de la nature ou simplement en quête de découverte, notre musée est l'endroit idéal pour satisfaire votre curiosité et vous émerveiller devant les merveilles de notre monde naturel." textAlignment="CENTER" wrappingWidth="786.93408203125">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Text>
+            <Button fx:id="MusicBtn" layoutX="818.0" layoutY="254.0" mnemonicParsing="false" onAction="#jouerMusique" prefHeight="52.0" prefWidth="54.0" />
+            <ImageView fitHeight="40.0" fitWidth="34.0" layoutX="828.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/musique_icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="325.0" fitWidth="1089.0" layoutX="-4.0" layoutY="-7.0">
+         <image>
+            <Image url="@../../../images/musee.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#ffe65b" layoutX="379.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIENVENUE !" wrappingWidth="544.93408203125">
+         <font>
+            <Font name="Berlin Sans FB" size="66.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="33.0" fitWidth="34.0" layoutX="648.0" layoutY="608.0">
+         <image>
+            <Image url="@../../../images/insta.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="34.0" layoutX="525.0" layoutY="609.0">
+         <image>
+            <Image url="@../../../images/fb.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="420.0" layoutY="630.0" strokeType="OUTSIDE" strokeWidth="0.0" text="www.musego.tn" wrappingWidth="93.93408203125">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="575.0" layoutY="630.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  musegotn" wrappingWidth="93.93408203125">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

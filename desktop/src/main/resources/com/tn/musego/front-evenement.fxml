@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="645.0" maxWidth="1080.0" minHeight="645.0" minWidth="1080.0" prefHeight="645.0" prefWidth="1080.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tn.musego.controllers.FrontEventController">
+   <children>
+      <ListView fx:id="listView" layoutX="14.0" layoutY="70.0" prefHeight="525.0" prefWidth="994.0" />
+      <ScrollPane fx:id="scrollPane" layoutX="27.0" layoutY="147.0" prefHeight="437.0" prefWidth="969.0" stylesheets="@../../../styles/Event.css" AnchorPane.bottomAnchor="61.0">
+         <content>
+            <AnchorPane />
+         </content>
+      </ScrollPane>
+      <ListView fx:id="listView1" layoutX="725.0" layoutY="164.0" prefHeight="279.0" prefWidth="282.0" stylesheets="@../../../styles/Event.css" />
+      <TextArea fx:id="voir_details" editable="false" layoutX="725.0" layoutY="223.0" prefHeight="199.0" prefWidth="281.0" text="&#10;&#10;&#10;" wrapText="true">
+         <font>
+            <Font name="Arial Nova Light" size="14.0" />
+         </font>
+      </TextArea>
+      <Text layoutX="736.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vous cherchez à vivre une expérience unique et immersive dans l'histoire? Ne cherchez plus " wrappingWidth="257.79986572265625">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchbar" layoutX="28.0" layoutY="27.0" prefHeight="34.0" prefWidth="149.0" stylesheets="@../../../styles/Event.css" />
+      <Text layoutX="22.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="| NOS EVENEMENTS" wrappingWidth="354.23828125">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Text>
+      <Button accessibleRole="NODE" layoutX="186.0" layoutY="25.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="79.0" styleClass="button3" stylesheets="@../../../styles/Event.css" text="chercher" />
+   </children>
+</AnchorPane>

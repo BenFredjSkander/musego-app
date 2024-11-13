@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tn.musego.controllers.FrontPassNewController">
+    <children>
+        <VBox alignment="CENTER" layoutX="342.0" layoutY="186.0" spacing="15.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Entrer votre nouveau mot de passe pour le compte de">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Text>
+                <Text fx:id="email" strokeType="OUTSIDE" strokeWidth="0.0">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Text>
+                <PasswordField fx:id="pass1input" promptText="Nouveau mot de passe" styleClass="input" stylesheets="@../../../styles/styles.css">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </PasswordField>
+                <PasswordField fx:id="pass2input" promptText="Confirmer le mot de passe" styleClass="input" stylesheets="@../../../styles/styles.css">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="resetBtn" mnemonicParsing="false" onAction="#resetPassword" styleClass="blackBtn" stylesheets="@../../../styles/styles.css" text="Réinitialiser mon mot de passe">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+      <ImageView fitHeight="131.0" fitWidth="137.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/LOGO_dark.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

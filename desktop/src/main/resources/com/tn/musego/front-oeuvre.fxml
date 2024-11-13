@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="645.0" maxWidth="1080.0" minHeight="645.0" minWidth="1080.0" prefHeight="645.0" prefWidth="1080.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tn.musego.controllers.FrontOeuvresController">
+   <children>
+      <ScrollPane fx:id="scrollPane" layoutX="39.0" layoutY="97.0" prefHeight="482.0" prefWidth="650.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="320.0" prefWidth="582.0" />
+        </content>
+      </ScrollPane>
+      <TextField fx:id="searchbar" layoutX="751.0" layoutY="84.0" prefHeight="26.0" prefWidth="197.0" promptText="Recherche" />
+      <ScrollPane fx:id="scrollPaneArtiste" layoutX="724.0" layoutY="161.0" prefHeight="419.0" prefWidth="320.0">
+        <content>
+          <AnchorPane fx:id="scrollpanArtiste" minHeight="0.0" minWidth="0.0" prefHeight="414.0" prefWidth="317.0" />
+        </content>
+      </ScrollPane>
+      <Label layoutX="727.0" layoutY="137.0" text="Pour plus de détails sur l'artiste, veuillez cliquer sur l'image!" />
+      <Text layoutX="48.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="| NOS OEUVRES" wrappingWidth="354.23828125">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

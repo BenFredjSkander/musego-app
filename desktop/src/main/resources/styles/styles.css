@@ -1,0 +1,179 @@
+.backofficeMain {
+    -fx-background-color: #275497;
+}
+
+.frontofficeMain {
+    -fx-background-color: #c49224;
+}
+
+.input {
+    -fx-border-color: #275497;
+    -fx-border-width: 1;
+    -fx-focus-color: transparent;
+}
+
+.input:focused {
+    -fx-border-color: #275497;
+    -fx-border-width: 2;
+}
+
+.blackBtn {
+    -fx-background-color: #131313;
+    -fx-border-radius: 0;
+    -fx-text-fill: white;
+}
+
+.boutlineBtnBW {
+    -fx-border-color: #131313;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+}
+
+.context-menu {
+    -fx-background-color: #ff0000;
+    -fx-text-fill: white;
+    -fx-padding: 0;
+    -fx-border-color: #ff0000;
+}
+
+.menu-item {
+    -fx-border-color: #ff0000;
+    -fx-background-color: #ff0000;
+}
+
+
+* {
+    -theme-color-blue1: #085394;
+    -theme-color-blue2: #084889;
+    -theme-color-blue3: #025c99;
+    -theme-color-green1: #32a852;
+    -theme-color-green2: #07de41;
+    -theme-color-red1: #e32a05;
+    -theme-color-red2: #d42b05;
+    -theme-color-green3: #329B4D;
+    -theme-color-green4: #07CE40;
+    -theme-color-orange1: #eeaa06;
+    -theme-color-orange2: #e39f06;
+    -theme-color-gray1: #a2a2a2;
+    -theme-color-gray2: #848484;
+    -theme-color-gray3: #575757;
+    -theme-background: #f4f4f4;
+}
+
+.jfx-button {
+    -fx-text-fill: -theme-background;
+}
+
+.button:hover {
+    -fx-cursor: hand;
+}
+
+#application-title {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.title-button {
+    -fx-background-color: transparent;
+    -jfx-disable-visual-focus: true;
+    -fx-padding: 4;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.title-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-cursor: hand;
+}
+
+.close-icon {
+    -glyph-size: 30px;
+    -fx-text-fill: -theme-color-red1;
+    -fx-fill: -theme-color-red1;
+}
+
+.minimize-icon {
+    -glyph-size: 30px;
+    -fx-text-fill: -theme-background;
+    -fx-fill: -theme-background;
+}
+
+.tab-pane .tab-header-area {
+    -fx-padding: 0;
+}
+
+.tab-pane .headers-region {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-width: 0;
+}
+
+.tab-pane .tab-header-background, .tab-pane .tab-header-area {
+    -fx-background-color: -theme-color-blue1;
+}
+
+.tab {
+    -fx-background-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-background-radius: 0;
+}
+
+.tab *.tab-label {
+    -fx-rotate: 90;
+}
+
+.tab:hover {
+    -fx-cursor: hand;
+    -fx-background-color: -theme-color-blue2;
+}
+
+.tab-icon {
+    -glyph-size: 25px;
+    -fx-text-fill: -theme-background;
+    -fx-fill: -theme-background;
+}
+
+.tab:selected {
+    -fx-background-color: -theme-background;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: -theme-background;
+    -fx-cursor: default;
+}
+
+.tab:selected .tab-pane-label {
+    -fx-text-fill: -theme-color-blue1;
+}
+
+.tab:selected .tab-icon {
+    -fx-text-fill: -theme-color-blue1;
+    -fx-fill: -theme-color-blue1;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}
+
+.tab-pane-label {
+    -fx-text-fill: -theme-background;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-indent: 20px;
+}
+
+.tab-content-area {
+    -fx-background-color: -theme-background;
+}
+
+.panel {
+    -fx-background-color: #fff;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-padding: 20px;
+    -fx-animation-duration: 2s;
+    -fx-animation-timing-function: linear;
+    -fx-animation-iteration-count: infinite;
+    -fx-animation-name: breathing;
+}
+

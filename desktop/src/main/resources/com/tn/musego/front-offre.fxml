@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="645.0" maxWidth="1080.0" minHeight="645.0" minWidth="1080.0" prefHeight="645.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tn.musego.controllers.OffreFrontController">
+   <children>
+      <VBox prefHeight="645.0" prefWidth="1080.0">
+         <children>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="645.0" prefWidth="1030.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="1200.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="| NOS Offres" wrappingWidth="201.23828125">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="31.0" />
+                                 </font>
+                              </Text>
+                              <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                              <Button fx:id="paybtn" mnemonicParsing="false" onAction="#viewPay" prefHeight="46.0" prefWidth="206.0" style="-fx-background-color: #000;" styleClass="blackBtn" text="Ajouter un moyen paiement" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                        <HBox prefHeight="542.0" prefWidth="1080.0">
+                           <children>
+                              <VBox prefHeight="542.0" prefWidth="1101.0">
+                                 <children>
+                                    <HBox prefHeight="45.0" prefWidth="843.0" />
+                                    <Separator prefWidth="200.0" />
+                                    <VBox prefHeight="488.0" prefWidth="843.0">
+                                       <children>
+                                          <ScrollPane fx:id="scrollPane" prefHeight="406.0" prefWidth="942.0">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                                            </content>
+                                          </ScrollPane>
+                                          <Separator prefWidth="200.0" />
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Suivez-nous sur les réseaux sociaux: ">
+                                                   <font>
+                                                      <Font size="26.0" />
+                                                   </font>
+                                                </Text>
+                                                <ImageView fitHeight="47.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../images/fb.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="48.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../images/insta.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="47.0" fitWidth="86.0" layoutX="650.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../images/twi.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

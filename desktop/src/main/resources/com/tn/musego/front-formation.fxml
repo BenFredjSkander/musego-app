@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="645.0" maxWidth="1080.0" minHeight="645.0" minWidth="1080.0" prefHeight="645.0" prefWidth="1080.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tn.musego.controllers.FrontFormationController">
+   <children>
+      <ImageView fitHeight="454.0" fitWidth="214.0" layoutX="811.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/statue_grecque.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="71.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Découvrez les formations fascinantes proposées par MuseGO depuis le confort de votre ordinateur et accédez à une variété de formations sur divers sujets qui vous intéressent. Apprenez de nouveaux sujets passionnants à votre propre rythme. " textAlignment="JUSTIFY" wrappingWidth="739.5366157591343">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER" fillHeight="false" layoutX="16.0" layoutY="180.0" prefHeight="453.0" prefWidth="1054.0" spacing="50.0">
+         <children>
+            <VBox prefHeight="454.0" prefWidth="1046.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="veuillez sélectionner un type de d'atelier:" wrappingWidth="421.13663855195045">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <ComboBox fx:id="comboFormation" onAction="#handleComboBoxAction" prefHeight="44.0" prefWidth="258.0" />
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="998.0" />
+                  <HBox prefHeight="378.0" prefWidth="1091.0">
+                     <children>
+                        <VBox prefHeight="378.0" prefWidth="457.0">
+                           <children>
+                              <Text fx:id="labelFormation" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="466.9367160797119">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="imgFormation" fitHeight="308.0" fitWidth="354.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets left="60.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <ScrollPane fx:id="formationScrollPane" prefHeight="378.0" prefWidth="446.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="208.0" prefWidth="169.0" />
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Text layoutX="71.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="| NOS Ateliers" wrappingWidth="354.23828125">
+         <font>
+            <Font name="Berlin Sans FB" size="31.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../../../styles/frontstyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tn.musego.controllers.FrontContainerController">
+    <AnchorPane prefHeight="75.0" prefWidth="1280.0" styleClass="frontofficeMain" stylesheets="@../../../styles/frontstyle.css">
+        <children>
+            <HBox alignment="CENTER" layoutX="14.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity">
+                <children>
+                    <ImageView fitHeight="55.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../images/hannibal_icon.png" />
+                        </image>
+                    </ImageView>
+                    <ImageView fitHeight="22.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../images/musego_wh.png" />
+                        </image>
+                    </ImageView>
+                </children>
+            </HBox>
+            <MenuButton fx:id="profilemenu" layoutX="1172.0" layoutY="12.0" mnemonicParsing="false" onAction="#openProfileMenu" style="-fx-background-color: transparent;" textFill="WHITE" AnchorPane.rightAnchor="30.0">
+                <graphic>
+                    <ImageView fitHeight="150.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../images/profil_icon.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </MenuButton>
+        </children>
+    </AnchorPane>
+
+    <TabPane fx:id="tabPane" layoutY="73.0" prefHeight="645.0" prefWidth="1280.0" rotateGraphic="true" side="LEFT" tabClosingPolicy="UNAVAILABLE" />
+
+</AnchorPane>

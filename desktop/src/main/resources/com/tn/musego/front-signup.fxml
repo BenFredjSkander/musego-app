@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tn.musego.controllers.SignupController">
+    <children>
+        <VBox alignment="CENTER" layoutX="898.0" layoutY="272.0" spacing="15.0">
+            <children>
+                <TextField fx:id="username_input" promptText="Nom complet" styleClass="input" stylesheets="@../../../styles/styles.css">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="email_input" promptText="Email" styleClass="input" stylesheets="@../../../styles/styles.css">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="pass_input" promptText="Mot de passe" style="-fx-border-color: #275497;" styleClass="input" stylesheets="@../../../styles/styles.css">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </PasswordField>
+                <PasswordField fx:id="pass2_input" promptText="Confirmer mot de passe" style="-fx-border-color: #275497;" styleClass="input" stylesheets="@../../../styles/styles.css">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="create_btn" mnemonicParsing="false" onAction="#createAccount" prefWidth="150.0" style="-fx-background-color: #131313; -fx-border-radius: 0;" text="Commencer" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="login_btn" mnemonicParsing="false" onAction="#goToLogin" prefWidth="150.0" style="-fx-border-color: #131313; -fx-background-color: transparent;" text="Se connecter" textAlignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+      <ImageView fitHeight="842.0" fitWidth="1087.0" layoutX="-381.0" layoutY="-3.0" opacity="0.88" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/muse-bardo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="897.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/blue%20large.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="782.0" layoutY="148.0" text="Commencer l'expérience">
+         <font>
+            <Font name="Open Sans SemiBold" size="36.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
